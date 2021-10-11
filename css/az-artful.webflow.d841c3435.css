@@ -286,6 +286,7 @@ figcaption {
   line-height: 1;
   font-weight: 700;
   text-align: right;
+  text-shadow: 8px 6px 8px #696969;
 }
 
 .hero-text.white-hello {
