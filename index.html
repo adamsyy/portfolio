@@ -34,6 +34,10 @@
       n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className +=
         t + "touch")
     }(window, document);
+    function toggleDarkMode() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+    }
   </script>
 
   <meta property="og:image" content="https://cdn1.bbcode0.com/uploads/2021/8/7/8cbc26bf3c750df7225484406b7f2bee-full.jpg">
@@ -60,6 +64,7 @@
           <div class="nav-link-text">Github &gt; Projects</div>
           <div class="link-underline"></div>
         </a>
+        <button onclick="toggleDarkMode()">Toggle dark mode</button>
         <div class="pointer-events w-embed">
           <style>
             .cursor {

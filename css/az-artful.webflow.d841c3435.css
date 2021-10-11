@@ -2058,6 +2058,11 @@ figcaption {
     margin-top: -11px;
   }
 
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }
+
   .category-acronym {
     left: 0%;
     top: 10px;
