@@ -5599,3 +5599,9 @@ input:checked + .slider:before {
     grid-column-end: span 1;
   }
 }
+
+.last{
+text-align: center;
+margin-right:220px;
+margin-left:220px;
+}
