@@ -11,6 +11,22 @@ html {
 body {
   margin: 0;
 }
+
+::-webkit-scrollbar {
+  width: 0.80rem;
+  background-color: hsl(230, 12%, 90%);
+  border-radius: 0.45rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsl(230, 12%, 80%);
+  border-radius: 0.45rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(230, 8%, 65%);
+}
+
 article,
 aside,
 details,
