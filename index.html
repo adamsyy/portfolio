@@ -15,8 +15,9 @@
   <meta content=" An 18 year old bloke from India. First year Computed science student at MEC Thrikakkara. I am make Youtube videos sometimes." name="twitter:card" />
   <meta content="width=device-width, initial-scale=1" name="viewport" />
   <meta content="An 18 year old bloke from India. First year Computed science student at MEC Thrikakkara. I am make Youtube videos sometimes." name="generator" />
-  <link href="https://assets.website-files.com/60586ee6b54d92a3bcaebe89/css/az-artful.webflow.d841c3435.css"
+  <link href="./css/az-artful.webflow.d841c3435.css"
     rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
   <script src="watermark_remove.js"></script>
   <script type="text/javascript">
@@ -34,8 +35,14 @@
       n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className +=
         t + "touch")
     }(window, document);
-  </script>
+    function toggleDarkMode() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
 
+    var bg = document.getElementsByClassName("nav-bg-white");
+    bg[0].classList.toggle("nav-bg-white");
+    }
+  </script>
   <meta property="og:image" content="https://cdn1.bbcode0.com/uploads/2021/8/7/8cbc26bf3c750df7225484406b7f2bee-full.jpg">
   <link href="imgg/16.jpg"
     rel="shortcut icon" type="image/x-icon" />
@@ -48,7 +55,10 @@
 <body>
   <div data-collapse="small" data-animation="default"class="fixed-nav w-nav">
     <div class="container nav-container w-container">
-       
+      <label class="switch">
+        <input type="checkbox" onclick="toggleDarkMode()">
+        <span class="slider round"></span>
+      </label>
       </a>
       <nav role="navigation" class="nav-menu w-nav-menu"><a href="imgg/resume2.pdf" class="nav-link w-inline-block">
           <div class="nav-link-text">Resume</div>
@@ -60,6 +70,8 @@
           <div class="nav-link-text">Github &gt; Projects</div>
           <div class="link-underline"></div>
         </a>
+    
+
         <div class="pointer-events w-embed">
           <style>
             .cursor {
