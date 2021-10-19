@@ -47,9 +47,13 @@
     function toggleDarkMode() {
       var element = document.body;
       element.classList.toggle("dark-mode");
+      
+      document.getElementById("dropMeTextImage").src = element.classList.contains("dark-mode") ?  "imgg/DropMeATextWhite.svg" : "imgg/DropMeATextBlack.svg"
+      document.getElementById("logoImage").src = element.classList.contains("dark-mode") ? "imgg/logoWhite.svg" : "imgg/logoBlack.svg"
 
       var bg = document.getElementsByClassName("nav-bg-white");
       bg[0].classList.toggle("nav-bg-white");
+
     }
   </script>
   <meta property="og:image"
@@ -446,9 +450,11 @@
           </div>
         </div>
         <div data-w-id="99bc6bd0-837d-9882-425d-1889465cdbc7" class="circle-container"><img
-            src="imgg/DropMeTextWhite.svg"
+          id="dropMeTextImage"
+            src="imgg/DropMeATextBlack.svg"
             loading="lazy" alt="" class="circle-image" /><img
-            src="imgg/logoWhite.svg"
+            id="logoImage"
+            src="imgg/logoBlack.svg"
             loading="lazy" alt="" class="circle-small-image" /></div>
       </div>
       <div class="fade-in-slow-on-view">
