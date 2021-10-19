@@ -1,0 +1,124 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+a{
+  color: #fff;
+}
+
+a:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+body {
+  background: #100F10;
+  color: #fff;
+  cursor: auto;
+  margin: 0 20px;
+}
+
+#nav {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.card-wrapper {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  color:rgba(0, 0, 0, 1)
+}
+.card-wrapper::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+.card-wrapper .card {
+  float: left;
+  display: block;
+  margin-right: 2.3576520234%;
+  width: 82.9403913294%;
+  margin-left: 8.5298043353%;
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background: #fff;
+  height: auto;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.card-wrapper .card:last-child {
+  margin-right: 0;
+}
+.card-wrapper .card .card-img {
+  /* background: url("http://orig11.deviantart.net/a6d0/f/2011/234/7/4/nyan_cat_drawing_by_dragonollie15-d47g4ql.png"); */
+  float: left;
+  display: block;
+  margin-right: 2.3576520234%;
+  width: 31.7615653177%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: center center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+.card-wrapper .card .card-img:last-child {
+  margin-right: 0;
+}
+.card-wrapper .card .card-text {
+  float: left;
+  display: block;
+  margin-right: 2.3576520234%;
+  width: 65.8807826589%;
+  box-sizing: borderbox;
+  padding: 30px 15px;
+  float: right;
+}
+.card-wrapper .card .card-text:last-child {
+  margin-right: 0;
+}
+.card-wrapper .card .card-text .card-title {
+  font-size: 22px;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  color: #F54B43;
+}
+.card-wrapper .card .card-text .card-description {
+  font-size: 18px;
+  margin-top: 15px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+}
+
+@media screen and (max-width: 767px) {
+  .card-wrapper .card {
+    float: left;
+    display: block;
+    margin-right: 2.3576520234%;
+    width: 82.9403913294%;
+    margin-left: 8.5298043353%;
+    height: auto;
+  }
+  .card-wrapper .card:last-child {
+    margin-right: 0;
+  }
+  .card-wrapper .card .card-img {
+    width: 100%;
+    height: 295px;
+    position: relative;
+  }
+  .card-wrapper .card .card-text {
+    width: 100%;
+  }
+}
