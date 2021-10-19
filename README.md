@@ -15,10 +15,6 @@ By Adam a simple portfolio to introduce my skills to all developers
 - CSS
 
   
-## Authors
-
-- [@weberstills](https://github.com/weberstills)
-
   
 ## Contributing
 
