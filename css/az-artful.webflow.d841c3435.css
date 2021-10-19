@@ -5599,3 +5599,23 @@ input:checked + .slider:before {
     grid-column-end: span 1;
   }
 }
+.project-button
+{
+  background-color: #000000;
+  color:white;
+  padding : 10px 30px;
+  text-align: center;
+  text-decoration: none;
+
+}
+.project-button:hover
+{
+  background-color:#D5D5D5;
+  color:#000000;
+}
+.project-btn
+{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
