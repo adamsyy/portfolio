@@ -46,13 +46,13 @@
     }(window, document);
     function toggleDarkMode() {
       var element = document.body;
-      element.classList.toggle("dark-mode");
+      element?.classList.toggle("dark-mode");
       
       document.getElementById("dropMeTextImage").src = element.classList.contains("dark-mode") ?  "imgg/DropMeATextWhite.svg" : "imgg/DropMeATextBlack.svg"
       document.getElementById("logoImage").src = element.classList.contains("dark-mode") ? "imgg/logoWhite.svg" : "imgg/logoBlack.svg"
 
       var bg = document.getElementsByClassName("nav-bg-white");
-      bg[0].classList.toggle("nav-bg-white");
+      bg[0]?.classList.toggle("nav-bg-white");
 
     }
   </script>
