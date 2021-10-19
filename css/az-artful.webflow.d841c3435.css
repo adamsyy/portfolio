@@ -5695,3 +5695,19 @@ Remove or comment-out the code block below to see how the browser will fall-back
 	}
 }
 
+@media only screen and (max-width: 600px) {
+
+  #gallery-container{
+	  max-width: 50rem;
+  }
+
+  .gallery-item {
+    flex: 1 0 14rem;
+  }
+
+  .gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+		grid-gap: 2rem;
+	}
+}
