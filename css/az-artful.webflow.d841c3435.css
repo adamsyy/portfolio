@@ -5704,3 +5704,16 @@ Remove or comment-out the code block below to see how the browser will fall-back
     grid-gap: 2rem;
   }
 }
+.hloi{
+  width: 50%;
+  margin: 0 auto;
+}
+.wrapper{
+  width: 50%;
+  margin: 0 auto;
+ 
+}
+.calender{
+  max-width: 200px;
+}
+
