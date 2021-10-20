@@ -46,10 +46,15 @@
     }(window, document);
     function toggleDarkMode() {
       var element = document.body;
-      element.classList.toggle("dark-mode");
+      element?.classList.toggle("dark-mode");
+      
+      document.getElementById("dropMeTextImage").src = element.classList.contains("dark-mode") ?  "imgg/DropMeATextWhite.svg" : "imgg/DropMeATextBlack.svg"
+      document.getElementById("logoImage").src = element.classList.contains("dark-mode") ? "imgg/logoWhite.svg" : "imgg/logoBlack.svg"
+      document.getElementById("menu-button").src = element.classList.contains("dark-mode") ? "imgg/menu-icon-white.svg" : "imgg/menu-icon-black.svg"
 
       var bg = document.getElementsByClassName("nav-bg-white");
-      bg[0].classList.toggle("nav-bg-white");
+      bg[0]?.classList.toggle("nav-bg-white");
+
     }
   </script>
   <meta property="og:image"
@@ -89,7 +94,8 @@
         </div>
       </nav>
       <div class="menu-button w-nav-button"><img
-          src="https://assets.website-files.com/60586ee6b54d92a3bcaebe89/60586ee6b54d9250faaebec9_menu-icon-black.svg"
+        id="menu-button"
+          src="imgg/menu-icon-black.svg"
           loading="lazy" alt="" /></div>
     </div>
     <div class="nav-bg-white"></div>
@@ -444,6 +450,30 @@
 
   </div>
 
+  <section id="gallery-container">
+    <div class="gallery">
+
+      <div class="gallery-item">
+        <img class="gallery-image" src="imgg/adam1.jpeg" alt="person writing in a notebook beside by an iPad, laptop, printed photos, spectacles, and a cup of coffee on a saucer">
+      </div>
+     
+
+      <div class="gallery-item">
+        <img class="gallery-image" src="imgg/adam6.jpg">
+      </div>
+
+      <div class="gallery-item">
+        <img class="gallery-image" src="imgg/adam7.jpg">
+      </div>
+
+      
+
+    </div>
+  </section>
+
+  <hr>
+
+  
   <div class="footer">
     <div class="container w-container">
       <div class="footer-title-container">
@@ -463,9 +493,11 @@
           </div>
         </div>
         <div data-w-id="99bc6bd0-837d-9882-425d-1889465cdbc7" class="circle-container"><img
-            src="https://assets.website-files.com/60586ee6b54d92a3bcaebe89/605c9255abd0491c52bb0a9a_DropMeAText.svg"
+          id="dropMeTextImage"
+            src="imgg/DropMeATextBlack.svg"
             loading="lazy" alt="" class="circle-image" /><img
-            src="https://assets.website-files.com/60586ee6b54d92a3bcaebe89/605b511648fcd1698ad70bf3_logo.svg"
+            id="logoImage"
+            src="imgg/logoBlack.svg"
             loading="lazy" alt="" class="circle-small-image" /></div>
       </div>
       <div class="fade-in-slow-on-view">

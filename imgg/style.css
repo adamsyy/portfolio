@@ -134,3 +134,21 @@
 .services .iconbox-teal:hover .icon path {
   fill: #11dbcf;
 }
+
+
+.github-profile {
+	margin-bottom: 10px;
+}
+
+.card {
+	text-align: center;
+}
+
+.card-img-top {
+	align-self: center;
+	padding: 20px;
+}
+
+.card-img-block {
+	height: 200px;
+}
