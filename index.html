@@ -50,6 +50,7 @@
       
       document.getElementById("dropMeTextImage").src = element.classList.contains("dark-mode") ?  "imgg/DropMeATextWhite.svg" : "imgg/DropMeATextBlack.svg"
       document.getElementById("logoImage").src = element.classList.contains("dark-mode") ? "imgg/logoWhite.svg" : "imgg/logoBlack.svg"
+      document.getElementById("menu-button").src = element.classList.contains("dark-mode") ? "imgg/menu-icon-white.svg" : "imgg/menu-icon-black.svg"
 
       var bg = document.getElementsByClassName("nav-bg-white");
       bg[0]?.classList.toggle("nav-bg-white");
@@ -93,7 +94,8 @@
         </div>
       </nav>
       <div class="menu-button w-nav-button"><img
-          src="https://assets.website-files.com/60586ee6b54d92a3bcaebe89/60586ee6b54d9250faaebec9_menu-icon-black.svg"
+        id="menu-button"
+          src="imgg/menu-icon-black.svg"
           loading="lazy" alt="" /></div>
     </div>
     <div class="nav-bg-white"></div>
