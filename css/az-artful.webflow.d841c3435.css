@@ -5721,3 +5721,9 @@ Remove or comment-out the code block below to see how the browser will fall-back
   max-width: 200px;
 }
 
+.project-btn2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
