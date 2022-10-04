@@ -27,7 +27,7 @@ Make sure to create a new branch and contribute.
 For major changes, please open an issue first to discuss what you would like to change.
 
   
-# Hi there,i'm Adam
+# Hi there,I'm Adam
 
   
 ## 🚀 About Me
