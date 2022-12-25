@@ -1,7 +1,7 @@
 
 # Adamsy
 
-By Adam a simple portfolio to introduce my skills to all developers..
+By Adam a simple portfolio to introduce my skills to all developers.
 
 
 ## Description
